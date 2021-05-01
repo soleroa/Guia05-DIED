@@ -1,10 +1,9 @@
 package guia05;
 import java.util.ArrayList;
 public class Usuario {
-	String nombre; 
-	String mail;
+	private String nombre; 
+	private String mail;
 	private ArrayList<Contratable> listaDeContratables = new ArrayList<Contratable>();
-
 
 	public Usuario(String nombre,String mail, ArrayList<Contratable> listaDeContratables ) {
 		this.nombre= nombre; 
@@ -12,7 +11,6 @@ public class Usuario {
 		this.listaDeContratables = listaDeContratables;
 	} 
 	
-	// metodo contratar 
 	public void Contratar(Contratable contratable) throws AlquilerNoEntregadoException {
 		int contador=0;
 		for(int i=0; i< listaDeContratables.size();i++) {

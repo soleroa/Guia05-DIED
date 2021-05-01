@@ -2,11 +2,11 @@ package guia05;
 import java.util.ArrayList;
 
 public class Trabajador {
-	String nombre;
-	Oficio oficio;
-	String correoElectronico; 
-	double porcentajePorComision;
-	double costoPorHora; 
+	private String nombre;
+	private Oficio oficio;
+	private String correoElectronico; 
+	private double porcentajePorComision;
+	private double costoPorHora; 
 	private ArrayList<Trabajo> listaDeTrabajosAsignados = new ArrayList<Trabajo>();
 	
 	public Trabajador(String nombre, Oficio oficio, String correoElectronico, double porcentajePorComision, double costoPorHora) {

@@ -1,7 +1,7 @@
 package guia05;
 
 public class Oficio {
-	String nombre;
+	private String nombre;
 	public Oficio(String nombre) {
 		this.nombre = nombre;
 	}

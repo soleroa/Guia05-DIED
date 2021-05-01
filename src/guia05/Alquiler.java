@@ -4,10 +4,10 @@ import java.time.LocalDate;
 
 
 public class Alquiler implements Contratable {
-	Herramienta herramienta; 
-	LocalDate fechaInicio;
-	LocalDate fechaEntrega; 
-	LocalDate fechaDevolucion; 
+	private Herramienta herramienta; 
+	private LocalDate fechaInicio;
+	private LocalDate fechaEntrega; 
+	private LocalDate fechaDevolucion; 
 	
 	public Alquiler(Herramienta herramienta, LocalDate fechaInicio, LocalDate fechaEntrega, LocalDate fechaDevolucion) {
 		super();
@@ -31,7 +31,7 @@ public class Alquiler implements Contratable {
 			return false; 
 		}
 	}
-	//ver esto
+	
 	public boolean Finalizado(){
 		if(this.fechaDevolucion != null ) {
 			return true;

@@ -1,8 +1,8 @@
 package guia05;
 public class Herramienta {
-	String nombre; 
-	double costo;
-	boolean fueDevuelta=false;
+	private String nombre; 
+	private double costo;
+	private boolean fueDevuelta=false;
 	
 	public Herramienta (String nombre, double costo, boolean fueDevuelta) {
 		this.nombre=nombre;

@@ -1,8 +1,8 @@
 package guia05;
 
 public class ServicioEstandar extends Servicio{
-	 double costoFijo;
-	 Trabajador trabajador; 
+	 private double costoFijo;
+	 private Trabajador trabajador; 
 
 	public ServicioEstandar(double costoFijo, Trabajador trabajador,String nombre, int  monto, Oficio oficio) {
 		super(nombre, trabajador, monto, oficio);
@@ -15,7 +15,22 @@ public class ServicioEstandar extends Servicio{
 		return costoFinal;
 	}
 	
-
+	//getters 
+	public double getCostoFijo(){
+		return costoFijo;
+	}
+	public Trabajador getTrabajador() {
+		return trabajador;
+	}
+	
+	//setters 
+	public void setCostoFijo(double costoFijo) {
+		this.costoFijo=costoFijo;
+	}
+	public void setTrabajador (Trabajador trabajador ) {
+		this.trabajador=trabajador; 
+	}
+	
 	
 }
 

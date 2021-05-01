@@ -1,11 +1,11 @@
 package guia05;
 import java.time.LocalDate;
 public class Trabajo implements Contratable {
-	Trabajador trabajador; 
-	Servicio servicio;
-	LocalDate fechaInicio;
-	LocalDate fechaFin; 
-	boolean esUrgente;
+	public Trabajador trabajador; 
+	private Servicio servicio;
+	public LocalDate fechaInicio;
+	private LocalDate fechaFin; 
+	private boolean esUrgente;
 	
 	public Trabajo (Trabajador trabajador, Servicio servicio, LocalDate fechaInicio, LocalDate fechaFin, boolean esUrgente) {
 		this.trabajador=trabajador; 
